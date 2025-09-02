@@ -1,0 +1,24 @@
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ls
+test_date.txt  test.sh
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ./search_script.sh test_file.txt Wilson
+bash: ./search_script.sh: No such file or directory
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ./test.sh test_date.txt Wilson
+bash: ./test.sh: Permission denied
+comes@comes-VMware-Virtual-Platform:~/Desktop$ chmod +x test.sh
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ./test.sh test_date.txt Wilson
+./test.sh: line 1: $'\r': command not found
+./test.sh: line 4: $'\r': command not found
+./test.sh: line 31: syntax error: unexpected end of file
+comes@comes-VMware-Virtual-Platform:~/Desktop$ sed -i 's/\r$//' test.sh
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ls -l test.sh
+-rwx--x--x 1 comes comes 804 Sep  1 23:47 test.sh
+comes@comes-VMware-Virtual-Platform:~/Desktop$ bash -n test.sh
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ./test.sh test_date.txt Wilson
+在文件 test_date.txt 中找到匹配 'Wilson' 的行号:
+6
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ./test.sh test_date.txt Davis
+在文件 test_date.txt 中找到匹配 'Davis' 的行号:
+7
+comes@comes-VMware-Virtual-Platform:~/Desktop$ ./test.sh test_date.txt Comes
+在文件 test_date.txt 中找到匹配 'Comes' 的行号:
+comes@comes-VMware-Virtual-Platform:~/Desktop$ 

@@ -1,0 +1,22 @@
+
+1,John Doe,35,Engineer,45000
+2,Jane Smith,28,Designer,38000
+3,Bob Johnson,42,Manager,65000
+4,Alice Brown,31,Developer,52000
+5,Tom Wilson,45,Director,78000
+6,Sarah Davis,29,Analyst,41000
+7,Mike Lee,38,Architect,58000
+8,Emily Chen,27,Assistant,36000
+9,David Kim,33,Consultant,49000
+10,Lisa Wong,40,HR,54000
+11,James Taylor,36,Developer,53000
+12,Karen White,32,Designer,42000
+13,Robert Harris,44,Manager,67000
+14,Nancy Martin,30,Analyst,43000
+15,Paul Allen,39,Engineer,56000
+16,Julia Scott,26,Assistant,34000
+17,Kevin Adams,41,Director,75000
+18,Amanda Green,34,Consultant,48000
+19,Daniel King,37,Architect,59000
+20,Jessica Hall,28,HR,39000
+（AI生成）
